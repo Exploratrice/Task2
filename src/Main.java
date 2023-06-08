@@ -1,20 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
-        int amount = 100;
-        int contributed = 1100;
-        int bonus = contributed / 100;
+        int initialBalance = 100;
+        int addend = 11co00;
 
-        int sum;
-        if (contributed > 1000) {
-            sum = amount + contributed + bonus;
-        } else {
-            sum = amount + contributed;
+        int bonus = 0;
+        if (addend > 1000) {
+            bonus = addend / 100;
         }
 
-            System.out.println("Итоговый счет: ");
-            System.out.println((sum) + " рублей(ь)");
-            System.out.println("Из них: ");
-            System.out.println((bonus) + " бонусных рублей(я)");
-        }
+        int finalBalance = initialBalance + addend + bonus;
+        System.out.println("Итоговый счет: " + finalBalance);
+        System.out.println("Бонус: " + bonus);
     }
+}
